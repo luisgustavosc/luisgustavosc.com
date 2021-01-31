@@ -20,6 +20,9 @@ body {
   margin: 0;
   font-family: 'Ropa Sans', sans-serif;
 }
+.mat-card {
+  font-family: 'Ropa Sans', sans-serif;
+}
 
 .body::-webkit-scrollbar {
   display: none;
@@ -69,4 +72,8 @@ body::-webkit-scrollbar-thumb {
   border-left-style: none !important;
   border-right-style: none !important;
   /* border-top-style: none !important; */
+}
+.social-media-tooltip {
+  font-size: 1rem;
+  background: var(--negroPrincipal);
 }

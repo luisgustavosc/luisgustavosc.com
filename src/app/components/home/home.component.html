@@ -1,0 +1,433 @@
+<div class="body" style="overflow-y: hidden">
+  <header class="header justify-content-between align-items-center">
+    <a [routerLink]="[ '/']" class="logo">Luisgustavosc</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon m-0" for="menu-btn">
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="cross1"></div>
+        <div class="cross2"></div>
+        <div class="line2"></div>
+      </div>
+    </label>
+    <ul class="menu nav">
+      <li><a class="navegacion" [ngx-scroll-to]="'#profile'">About</a></li>
+      <li> <a class="navegacion" [ngx-scroll-to]="'#portfolio'">Works</a></li>
+      <li> <a [ngx-scroll-to]="'#contact'" class="d-flex align-items-center navegacion">Contact</a>
+      </li>
+      <li> <a [routerLink]="[ '/ES']">Español</a></li>
+    </ul>
+  </header>
+
+
+
+  <div id="carousel" class="carousel slide carousel-fade" data-pause="false" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img [src]="'assets/web/bg-movil.png'" class="d-block d-md-block d-lg-none" alt="fondo principal">
+        <video loop muted autoplay [src]="'assets/video/video1.mp4'" class="d-none d-md-none d-lg-block"></video>
+        <div class="overlay">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 text-center mx-auto">
+                <h1 class="tituloCarousel">
+                  Hi! I'm <span>Luis G</span>, I'm a
+                  <span>web developer</span>
+                </h1>
+              </div>
+              <div class="col-lg-6 ">
+                <p class="descripCarousel text-center mx-auto">
+                  I am a <span> front-end web developer </span> passionate about technology and everything related to
+                  the analysis, design
+                  and development of interactive and high-performance websites that work on all platforms and devices.
+                  Here you can find some of my work.
+                </p>
+                <button [ngx-scroll-to]="'#portfolio'" class="buttonTypeOne" mat-button>
+
+                  View my work<i class="material-icons">
+                    arrow_right_alt
+                  </i>
+                </button>
+              </div>
+              <div class="redesSociales">
+                <a matTooltip="Luis Gustavo" matTooltipClass="social-media-tooltip" target="_blank" class="fab fa-facebook-f"
+                  href="https://www.facebook.com/luisgustavo.sanchezcabrera"></a>
+                <a matTooltip="@luisgustavosc" matTooltipClass="social-media-tooltip" target="_blank" class="fab fa-instagram"
+                  href="https://www.instagram.com/luisgustavosc/"></a>
+                <a matTooltip="@LuisGustavosc21" matTooltipClass="social-media-tooltip" target="_blank" class="fab fa-twitter"
+                  href="https://twitter.com/LuisGustavosc21"></a>
+                  <a matTooltip="Luisgustavosc" matTooltipClass="social-media-tooltip" target="_blank" class="fab fa-linkedin-in"
+                  href="https://www.linkedin.com/in/luisgustavosc/"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section id="profile" data-aos="fade-up" class="profile container-fluid">
+      <h2>My profile</h2>
+      <!-- <mat-card class="mb-3 row cardGeneral d-flex justify-content-around align-items-center">
+        <img data-aos="fade-right" mat-card-image [src]="'assets/svg/analysis.svg'" class="py-5 col-lg-6">
+        <mat-card data-aos="fade-left" class="card-info-datos col-lg-4">
+          <mat-card-header class="d-block d-sm-flex text-center mt-3 justify-content-center align-items-center">
+            <img mat-card-avatar [src]="'assets/web/me.png'" alt="foto de mi">
+            <mat-card-title>Luis Gustavo Sánchez</mat-card-title>
+            <mat-card-subtitle>Front-end Web Developer</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td><i class="material-icons">
+                      account_circle
+                    </i>Date of birth:</td>
+                  <td>September 21, 1999</td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">
+                      person_pin_circle
+                    </i>Location:</td>
+                  <td>Orlando - FL</td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">
+                      email
+                    </i>Email:</td>
+                  <td> <a href="mailto:lgsc2109@gmail.com">Lgsc2109@gmail.com</a> </td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">
+                      web
+                    </i>Website</td>
+                  <td>luisgustavosc.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </mat-card-content>
+        </mat-card>
+      </mat-card> -->
+      <mat-card data-aos="fade-up" class=" row cardGeneral d-flex justify-content-around align-items-center">
+        <mat-card data-aos="fade-left" class="card-info-datos col-lg-4">
+          <mat-card-header class="d-block d-sm-flex text-center mt-3 justify-content-center align-items-center">
+            <img mat-card-avatar [src]="'assets/web/me.jpg'" alt="foto de mi">
+            <mat-card-title>Luis Gustavo Sánchez</mat-card-title>
+            <mat-card-subtitle>Front-end Web Developer</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td><i class="material-icons">
+                      account_circle
+                    </i>Date of birth:</td>
+                  <td>September 21, 1999</td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">
+                      person_pin_circle
+                    </i>Location:</td>
+                  <td>Orlando - FL</td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">
+                      email
+                    </i>Email:</td>
+                  <td> <a href="mailto:lgsc2109@gmail.com">Lgsc2109@gmail.com</a> </td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">
+                      web
+                    </i>Website</td>
+                  <td>luisgustavosc.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </mat-card-content>
+        </mat-card>
+        <mat-card-content class="mt-4 mt-lg-0 col-lg-6 p-0">
+          <p>
+            I am a front-end web designer and developer from Venezuela and currently reside in Orlando,
+            Florida. I like to be constantly learning, and am always searching to learn new
+            coding languages ​​and creative ways to expand my knowledge. My aim is to improve the user interface and
+            create an amazing front-end website.
+          </p>
+          <br>
+          <p>
+
+            I am an enthusiast, who always seeks to give my best, and do the best possible job. Although i'm
+            familiar with the use of frameworks as angular, my websites are mainly encoded with
+            HTML5,
+            CSS3 and JavaScript.
+          </p>
+          <br>
+          <p>
+            I highly commit myself to each project that I carry out, and I like to progressively improve upon my work to
+            make sure that every aspect
+            is produced with the highest quality.
+
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </section>
+
+      <section data-aos="fade-up" id="portfolio" class="portfolio container-fluid">
+      <h2>My portfolio</h2>
+      <div class="row">
+
+        <div data-aos="fade-up-right" class="cardPortfolio col-lg-6 d-flex justify-content-center">
+          <figure class="work">
+            <img [src]="'assets/portfolio/pidespeed.png'" alt="capture" />
+            <figcaption>
+              <div>
+                <h5>Pide <span>Speed</span></h5>
+                <p>Web Development and Design
+                  <a target="_blank" href="https://pidespeed.com/" class="d-block">Go to website</a>
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div data-aos="fade-up-left" class="cardPortfolio col-lg-6 d-flex justify-content-center">
+          <figure class="work">
+            <img [src]="'assets/portfolio/develdesigns.png'" alt="capture" />
+            <figcaption>
+              <div>
+                <h5>Devel <span>Designs</span></h5>
+                <p>Web Development and Design
+                  <a class="d-block" target="_blank" href="https://develdesigns.com/">Go to website</a>
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div data-aos="fade-up-right" class="cardPortfolio col-lg-6 d-flex justify-content-center">
+          <figure class="work">
+            <img [src]="'assets/portfolio/eclas.png'" alt="capture" />
+            <figcaption>
+              <div>
+                <h5>Inversiones &nbsp; <span>Eclas</span></h5>
+                <p>Web Development and Design
+                  <a class="d-block" target="_blank" href="http://inversioneseclas.ga/">Go to website</a>
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div data-aos="fade-up-left" class="cardPortfolio col-lg-6 d-flex justify-content-center">
+          <figure class="work">
+            <img [src]="'assets/portfolio/trapitosbebe.png'" alt="capture" />
+            <figcaption>
+              <div>
+                <h5>Trapitos &nbsp; <span>Bebé</span></h5>
+                <p>Web Development and Design
+                  <a class="d-block" target="_blank" href="http://trapitosbebe.ga/">Go to website</a>
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up" class="resume container-fluid">
+      <h2>My resume</h2>
+      <mat-card class="row cardGeneral d-flex justify-content-around p-0 pb-3">
+
+        <div data-aos="fade-right" class="experience col-lg-8">
+          <h3 class="my-4">
+            Work history</h3>
+          <div class="timeline">
+            <div class="timeline-body">
+              <div class="timeline-item">
+                <p class="time">Jul. 2019</p>
+                <div class="content">
+                  <h4 class="title">PideSpeed</h4>
+                  <p>
+                    Web application for an online delivery store. I worked as a web designer and developer,
+                    creating a custom website with a responsive design that complied with the
+                    aim to positively impact customers. To carry out this project I used my
+                    skills and experiences with the angular framework.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <p class="time">Feb. 2019</p>
+                <div class="content">
+                  <h4 class="title">DevelDesigns</h4>
+                  <p>
+                    Website of a web design and development agency, in which I am co-founder. Animations
+                    displacement based enhance the
+                    desktop website and mobile devices. A website made with HTML5, CSS3 and JavaScript
+                    make that the
+                    experience perfect.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <p class="time">Dec. 2018</p>
+                <div class="content">
+                  <h4 class="title">Inversiones Eclas C.A</h4>
+                  <p>Front-end development of a website for a construction company in Venezuela. A website made with
+                    HTML5, CSS3, and JavaScript with a very good user experience.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <p class="time">Sep. 2018</p>
+                <div class="content">
+                  <h4 class="title">Trapitos bebé C.A</h4>
+                  <p>Website design and development for a baby clothes store. The website was developed with HTML5,
+                    CSS3, and JavaScript.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="skills col-lg-4">
+          <h3 class="text-center py-4">My skills</h3>
+          <mat-card class="card-info-datos">
+          
+            <mat-card-title class="pt-3">HTML 5</mat-card-title>
+            <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+         
+          
+            <mat-card-title class="pt-3">CSS 3</mat-card-title>
+            <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+         
+          
+            <mat-card-title class="pt-3">JavaScript</mat-card-title>
+            <mat-progress-bar mode="determinate" value="75"></mat-progress-bar>
+         
+          
+            <mat-card-title class="pt-3">TypeScript</mat-card-title>
+            <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+         
+          
+            <mat-card-title class="pt-3">Jquery</mat-card-title>
+            <mat-progress-bar mode="determinate" value="75"></mat-progress-bar>
+         
+          
+            <mat-card-title class="pt-3">Angular</mat-card-title>
+            <mat-progress-bar mode="determinate" value="65"></mat-progress-bar>
+         
+          
+            <mat-card-title class="pt-3">Bootstrap</mat-card-title>
+            <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>
+          </mat-card>
+          <br>
+          <mat-card class="card-info-datos my-3">
+            <mat-card-title class="text-center">Languages</mat-card-title>
+            <mat-card-title>Spanish</mat-card-title>
+            <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+            <mat-card-title class="pt-3">English</mat-card-title>
+            <mat-progress-bar mode="determinate" value="65"></mat-progress-bar>
+          </mat-card>
+          <a target="_blank" [routerLink]="[ '/assets/CV/Curriculum-vitae-en.pdf']" class="buttonTypeOne rounded-pill btnCV"
+            mat-raised-button>Download
+            CV</a>
+
+
+        </div>
+
+      </mat-card>
+    </section>
+
+    <section data-aos="fade-up" id="contact" class="contacto container-fluid">
+      <h2>Contact</h2>
+      <mat-card class="row cardGeneral">
+
+
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+
+        <ng-container *ngIf="sendCorrect; then Enviado; else NoEnviado"></ng-container>
+        <ng-template #NoEnviado>
+          <p class="p-lg-4 py-3">If you have any questions, please don't hesitate to contact me using the form below or directly email me
+            here: <a style="color: var(--azulPrincipal);" href="mailto:lgsc2109@gmail.com">Lgsc2109@gmail.com</a>.</p>
+
+          <form data-aos="zoom-out" [formGroup]="contactoForm" (ngSubmit)="contact(contactoForm)" class="row p-lg-3 formContacto">
+
+
+            <mat-form-field appearance="outline">
+              <mat-label class="label">Name</mat-label>
+              <input formControlName="name" type="text" matInput placeholder="Your name">
+              <mat-error *ngIf="contactoForm.controls['name'].errors?.required">This field is <b>required</b>
+              </mat-error>
+              <mat-error *ngIf="contactoForm.controls['name'].errors?.pattern">It is not a <b>valid name</b>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label class="label">Email</mat-label>
+              <input formControlName="email" type="email" matInput placeholder="email@email.com">
+              <mat-error *ngIf="contactoForm.controls['email'].errors?.required">This field is <b>required</b>
+              </mat-error>
+              <mat-error *ngIf="contactoForm.controls['email'].errors?.pattern">It is not a <b>valid email</b>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label class="label">Message</mat-label>
+              <textarea formControlName="message" matInput></textarea>
+              <mat-error *ngIf="contactoForm.controls['message'].errors?.required">This field is <b>required</b>
+              </mat-error>
+              <mat-error *ngIf="contactoForm.controls['message'].errors?.minlength">It is not a <b> valid message</b>
+              </mat-error>
+            </mat-form-field>
+            <button [disabled]="!contactoForm.valid" type="submit" class="buttonTypeOne" mat-stroked-button>Send <i
+                class="material-icons">
+                arrow_right_alt
+              </i></button>
+          </form>
+        </ng-template>
+        <ng-template #Enviado>
+          <mat-card data-aos="zoom-in-up"
+            class=" NoEnviado my-2 row cardGeneral d-flex justify-content-around align-items-center">
+            <ng-container *ngIf="lazyloader; then cargando; else Send"></ng-container>
+            <ng-template #cargando>
+              <div class="lazyloader"></div>
+            </ng-template>
+            <ng-template #Send>
+              <mat-card-content data-aos-duration="1500" class="col-lg-6 mensajeCorrecto ">
+                <h2 class="text-center">Message sent</h2>
+                <i class="fas fa-paper-plane"></i>
+                <p>Thanks for contacting me! I will answer you as soon as possible!</p>
+              </mat-card-content>
+              <img mat-card-image [src]="'assets/svg/send.svg'" class="col-lg-6" style="width: 700px">
+            </ng-template>
+          </mat-card>
+        </ng-template>
+      </mat-card>
+    </section>
+
+  </main>
+  <footer class="py-4">
+    <section class="row container mx-auto d-flex justify-content-around align-items-center">
+      <div class="logo col-lg-6">
+        Luisgustavosc
+      </div>
+      <div class="RedesFooter row col-lg-6">
+        <h4 class="text-center col-12">Social media</h4>
+
+        <div class="redesContenido d-flex justify-content-around align-items-center py-2">
+          <a matTooltip="Luis Gustavo" matTooltipClass="social-media-tooltip" target="_blank" class="fab fa-facebook-f"
+            href="https://www.facebook.com/luisgustavo.sanchezcabrera"></a>
+          <a matTooltip="@luisgustavosc" matTooltipClass="social-media-tooltip" target="_blank" class="fab fa-instagram"
+            href="https://www.instagram.com/luisgustavosc/"></a>
+          <a matTooltip="@LuisGustavosc21" matTooltipClass="social-media-tooltip" target="_blank" class="fab fa-twitter"
+            href="https://twitter.com/LuisGustavosc21"></a>
+            <a  matTooltipClass="social-media-tooltip" matTooltip="@LuisGustavosc21" target="_blank" class="fab fa-linkedin-in"
+            href="https://www.linkedin.com/in/luisgustavosc/"></a>
+          
+          </div>
+            
+      </div>
+    </section>
+    <div class="copyRight">
+      © 2020, Developed and designed by Luis Gustavo.
+    </div>
+  </footer>
+</div>
