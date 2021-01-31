@@ -16,13 +16,13 @@ declare var $: any;
     styleUrls: ["./home.component.css"]
 })
 export class HomeComponent implements OnInit {
-    private emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    private lat: number = 28.538336;
-    private lng: number = -81.379234;
-    private sendCorrect: boolean = false;
-    private lazyloader: boolean = false;
-    private projects = null
-    private contactoForm = new FormGroup({
+    public emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    public lat: number = 28.538336;
+    public lng: number = -81.379234;
+    public sendCorrect: boolean = false;
+    public lazyloader: boolean = false;
+    public projects = null
+    public contactoForm = new FormGroup({
         name: new FormControl("", [
             Validators.required,
             Validators.pattern("[a-zA-Z ]*")

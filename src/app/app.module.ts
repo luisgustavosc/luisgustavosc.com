@@ -10,7 +10,6 @@ import { AgmCoreModule } from "@agm/core";
 import { ScrollToModule } from "@nicky-lenaers/ngx-scroll-to";
 import { HomeEsComponent } from 'src/app/components/home-es/home-es.component';
 import { HttpClientModule } from '@angular/common/http';
-
 @NgModule({
   declarations: [AppComponent, HomeComponent, HomeEsComponent],
   imports: [
@@ -30,3 +29,6 @@ import { HttpClientModule } from '@angular/common/http';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+
+// Deploy in heroku
+//https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147

@@ -16,11 +16,11 @@ declare var $: any;
   styleUrls: ["../home/home.component.css"]
 })
 export class HomeEsComponent implements OnInit {
-  emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  lat: number = 28.538336;
-  lng: number = -81.379234;
-  sendCorrect: boolean = false;
-  lazyloader: boolean = false;
+  public emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  public lat: number = 28.538336;
+  public lng: number = -81.379234;
+  public sendCorrect: boolean = false;
+  public lazyloader: boolean = false;
   constructor() {}
 
   contactoForm = new FormGroup({
